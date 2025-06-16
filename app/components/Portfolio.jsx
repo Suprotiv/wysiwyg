@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useRef, useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
+import { projects } from "../constants/Portfolio";
 import {
   useScroll,
   useTransform,
@@ -8,10 +10,10 @@ import {
   AnimatePresence,
 } from "framer-motion";
 import FadeIn from "./FadeIn";
-import Lenis from "@studio-freight/lenis";
 import ProjectCard from "./ProjectCard";
 
-const Portfolio = () => {
+const Portfolio = ({ category }) => {
+  const router = useRouter();
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
@@ -21,15 +23,12 @@ const Portfolio = () => {
   const [selectedItem, setSelectedItem] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [hovered, setHovered] = useState(null);
-  const lenisRef = useRef(null);
 
   useEffect(() => {
     if (isModalOpen) {
       document.body.style.overflow = "hidden";
-      lenisRef.current?.stop();
     } else {
       document.body.style.overflow = "";
-      lenisRef.current?.start();
     }
     return () => {
       document.body.style.overflow = "";
@@ -51,35 +50,6 @@ const Portfolio = () => {
     [0, 0.7],
     ["#fefdf8", "#fefdf8"]
   );
-
-  const portfolioItems = [
-    {
-      id: 1,
-      title: "Anjika",
-      category:
-        "Anjika is a dance troupe founded by famed Manipuri dancer Priti Patel",
-      image: "/images/project1.jpg",
-      description:
-        "Anjika is a dance troupe founded by famed Manipuri dancer Priti Patel. The brand identity and collaterals reflect the elegance and versatility of her art form. COLLATERALS Logo, Invitations, Gifting, Stationery, Calendars",
-    },
-    {
-      id: 2,
-      title: "Amaison Designs",
-      category:
-        "We designed the identity for a luxe interior design firm, Amaison Designs",
-      image: "/images/project2.jpg",
-      description:
-        "We designed the identity for a luxe interior design firm, Amaison Designs. Our design solution combined boldness and luxury throwing the brand into the limelight. COLLATERALS Logo, Stationery, Lookbooks, Press Ads, Website, Digital Invites, Emailers, Carry Bags",
-    },
-    {
-      id: 3,
-      title: "Avama Jewellers",
-      category:
-        "Avama the jewellery brand needed communication that started from the name upwards.",
-      image: "/images/project3.jpg",
-      description: "",
-    },
-  ];
 
   const overlayVariants = {
     initial: { opacity: 0, y: 40 },
@@ -104,34 +74,42 @@ const Portfolio = () => {
     },
   };
 
+  // 🟢 Flatten all projects from staticData
+
+  // 🟢 Filter projects by category
+  const filteredProjects =
+    category === "all"
+      ? projects
+      : projects.filter((proj) => proj.category?.includes(category));
+
   return (
     <div
       ref={container}
-      className="relative w-full min-h-screen scrollbar-hide"
+      className="relative w-full min-h-screen scrollbar-hide "
     >
       <motion.div
         style={{ backgroundColor: bgColor }}
-        className="fixed top-0 left-0 w-full h-full -z-10 transition-colors duration-700"
+        className="fixed top-0 left-0 w-full h-full -z-10 transition-colors  duration-700"
       />
 
       <div className="container mx-auto py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {portfolioItems.map((item, index) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
+          {filteredProjects.map((item, index) => (
             <FadeIn
               key={index}
               duration={0.4 + (index % 3) * 0.1}
               yvalue={20 + (index % 3) * 12}
             >
               <motion.div
-                className="relative group overflow-hidden cursor-pointer"
+                className="relative group overflow-hidden cursor-pointer "
                 onMouseEnter={() => setHovered(index)}
                 onMouseLeave={() => setHovered(null)}
-                onClick={() => handleOpenModal(item)}
+                onClick={() => router.push(`/projects/${item.project_id}`)}
               >
                 <img
-                  src={item.image}
+                  src={`/images/${item.project_id}/MainBG.jpg`}
                   alt={item.title}
-                  className="w-full h-[260px] object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="w-full h-[260px] object-cover transition-transform rounded-sm duration-300 group-hover:scale-105"
                 />
 
                 <AnimatePresence mode="wait">
@@ -142,7 +120,7 @@ const Portfolio = () => {
                       initial="initial"
                       animate="animate"
                       exit="initial"
-                      className="absolute inset-0 bg-black/60 flex flex-col justify-end p-4 pointer-events-none"
+                      className="absolute inset-0 bg-black/60 rounded-sm flex flex-col justify-end p-4 pointer-events-none"
                     >
                       <motion.h3
                         key={`title-${index}`}
@@ -152,11 +130,11 @@ const Portfolio = () => {
                         {item.title}
                       </motion.h3>
                       <motion.p
-                        key={`subtitle-${index}`}
+                        key={`desc-${index}`}
                         variants={textVariants}
                         className="text-sm text-gray-200 mt-1"
                       >
-                        {item.category}
+                        {item.projectDescription}
                       </motion.p>
                     </motion.div>
                   )}
@@ -167,6 +145,7 @@ const Portfolio = () => {
         </div>
       </div>
 
+      {/* Optional modal logic still present, if used elsewhere */}
       <AnimatePresence>
         {isModalOpen && selectedItem && (
           <motion.div

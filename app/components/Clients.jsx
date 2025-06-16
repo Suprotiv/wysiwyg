@@ -13,13 +13,13 @@ const Clients = ({ direction = "left" }) => {
     { name: "Apple", image: "/images/client1.png" },
     { name: "Google", image: "/images/client2.png" },
     { name: "Microsoft", image: "/images/client3.png" },
-    { name: "Netflix", image: "/images/images.png" },
-    { name: "Amazon", image: "/images/client3.png" },
-    { name: "Apple", image: "/images/client1.png" },
-    { name: "Google", image: "/images/client2.png" },
-    { name: "Microsoft", image: "/images/client3.png" },
-    { name: "Netflix", image: "/images/client2.png" },
-    { name: "Amazon", image: "/images/images.png" },
+    { name: "Netflix", image: "/images/client4.png" },
+    { name: "Amazon", image: "/images/client5.png" },
+    { name: "Apple", image: "/images/client6.png" },
+    { name: "Google", image: "/images/client7.png" },
+    { name: "Microsoft", image: "/images/client8.png" },
+    { name: "Netflix", image: "/images/client9.png" },
+    { name: "Amazon", image: "/images/client10.png" },
   ];
 
   const [duration, setDuration] = useState(FAST_DURATION);
@@ -78,7 +78,7 @@ const Clients = ({ direction = "left" }) => {
           </div>
 
           {/* Scrolling Clients */}
-          <div className="relative h-[10vh] overflow-x-hidden flex-1 w-full max-w-full">
+          <div className="relative h-[12vh] overflow-x-hidden flex-1 w-full max-w-full">
             <motion.div
               className="absolute left-0 flex gap-10 items-center"
               style={{ x: xTranslation }}
@@ -105,7 +105,7 @@ const Clients = ({ direction = "left" }) => {
             </motion.div>
 
             {/* Fade Overlay */}
-            <div className="absolute inset-0 z-10 w-full pointer-events-none bg-[linear-gradient(to_right,_black_0%,_black_0%,_rgba(17,16,16,0.8)_40%,_rgba(17,16,16,0)_60%,_rgba(17,16,16,0.8)_80%,_black_100%)]" />
+            <div className="absolute inset-0 z-10 w-full pointer-events-none bg-[linear-gradient(to_right,_black_0%,_rgba(0,0,0,0.65)_40%,_rgba(0,0,0,0)_60%,_rgba(0,0,0,0.65)_80%,_black_100%)]" />
           </div>
         </div>
 

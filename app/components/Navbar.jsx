@@ -1,20 +1,42 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { FaSearch } from "react-icons/fa";
 import Botton from "./Botton";
 
 const Navbar = () => {
   const pathname = usePathname();
+  const router = useRouter();
 
-  const isProjectsRoute = pathname.startsWith("/projects");
+  const isCategoryRoute = ["/categories", "/about"].some((route) =>
+    pathname.startsWith(route)
+  );
+
+  const isProjectsRoute =
+    pathname.startsWith("/projects/") && pathname.split("/").length > 2;
+
+  const handleInputSearch = (input_term) => {
+    if (input_term) {
+      const query = input_term.toLowerCase().replace(/\s+/g, "-");
+      router.push(`/search?q=${query}`);
+    }
+  };
 
   const [navbarClass, setNavbarClass] = useState({
-    backgroundColor: isProjectsRoute ? "bg-transparent" : "bg-transparent",
-    padding: "py-3",
-    textColor: isProjectsRoute ? "text-black" : "text-[#f6f5ec]",
-    lineBackground: isProjectsRoute ? "bg-black" : "bg-[#f6f5ec]",
+    backgroundColor: isProjectsRoute ? "bg-[#111010]" : "bg-transparent",
+    padding: isProjectsRoute ? "py-1 md:py-0" : "py-3",
+    textColor: isCategoryRoute
+      ? isProjectsRoute
+        ? "text-[#fefdf8]"
+        : "text-black "
+      : "text-[#fefdf8]",
+    lineBackground: isCategoryRoute ? "bg-black" : "bg-[#fefdf8]",
+    logoSrc: isCategoryRoute
+      ? isProjectsRoute
+        ? "/images/logo.png"
+        : "/images/logo2.png"
+      : "/images/logo.png",
   });
 
   const [menuOpen, setMenuOpen] = useState(false);
@@ -37,11 +59,19 @@ const Navbar = () => {
         });
       } else {
         setNavbarClass({
-          backgroundColor: "bg-transparent",
-          padding: "py-3",
-          textColor: isProjectsRoute ? "text-black" : "text-[#fefdf8]",
-          lineBackground: isProjectsRoute ? "bg-black" : "bg-[#fefdf8]",
-          logoSrc: isProjectsRoute ? "/images/logo2.png" : "/images/logo.png",
+          backgroundColor: isProjectsRoute ? "bg-[#111010]" : "bg-transparent",
+          padding: isProjectsRoute ? "py-1 md:py-0" : "py-3",
+          textColor: isCategoryRoute
+            ? isProjectsRoute
+              ? "text-[#fefdf8]"
+              : "text-black "
+            : "text-[#fefdf8]",
+          lineBackground: isCategoryRoute ? "bg-black" : "bg-[#fefdf8]",
+          logoSrc: isCategoryRoute
+            ? isProjectsRoute
+              ? "/images/logo.png"
+              : "/images/logo2.png"
+            : "/images/logo.png",
         });
       }
     };
@@ -66,7 +96,7 @@ const Navbar = () => {
       window.removeEventListener("scroll", updateNavbarOnScroll);
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [menuOpen, isProjectsRoute]);
+  }, [menuOpen, isCategoryRoute, isProjectsRoute]);
 
   useEffect(() => {
     if (menuOpen) {
@@ -79,14 +109,22 @@ const Navbar = () => {
       });
     } else if (window.scrollY < 80) {
       setNavbarClass({
-        backgroundColor: "bg-transparent",
-        padding: "py-3",
-        textColor: isProjectsRoute ? "text-black" : "text-[#fefdf8]",
-        lineBackground: isProjectsRoute ? "bg-black" : "bg-[#fefdf8]",
-        logoSrc: isProjectsRoute ? "/images/logo2.png" : "/images/logo.png",
+        backgroundColor: isProjectsRoute ? "bg-[#111010]" : "bg-transparent",
+        padding: isProjectsRoute ? "py-1 md:py-0" : "py-3",
+        textColor: isCategoryRoute
+          ? isProjectsRoute
+            ? "text-[#fefdf8]"
+            : "text-black "
+          : "text-[#fefdf8]",
+        lineBackground: isCategoryRoute ? "bg-black" : "bg-[#fefdf8]",
+        logoSrc: isCategoryRoute
+          ? isProjectsRoute
+            ? "/images/logo.png"
+            : "/images/logo2.png"
+          : "/images/logo.png",
       });
     }
-  }, [menuOpen, isProjectsRoute]);
+  }, [menuOpen, isCategoryRoute, isProjectsRoute]);
 
   const navItems = [
     {
@@ -113,7 +151,7 @@ const Navbar = () => {
         "Case Study IFB",
       ],
     },
-    { label: "Case studies" },
+    { label: "Case Studies" },
     { label: "About" },
     { label: "Accolades" },
     { label: "Contact" },
@@ -219,7 +257,7 @@ const Navbar = () => {
                     {item.subItems.map((sub) => (
                       <li key={sub}>
                         <Link
-                          href={`/projects/${sub
+                          href={`/categories/${sub
                             .toLowerCase()
                             .replace(/\s+/g, "-")}`}
                           className="block px-2 py-1 text-sm text-[#f6f5ec] hover:bg-[#222] rounded"
@@ -270,6 +308,7 @@ const Navbar = () => {
                 placeholder="Search..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
+                onClick={(e) => handleInputSearch(e.target.value)}
                 className={`absolute right-0 top-full mt-2 w-64 px-4 py-2 rounded-md bg-[#fefdf8] text-[#111010] placeholder-[#111010] border border-[#272727] focus:outline-none focus:ring focus:ring-[#444] transition-all duration-300 transform ${
                   showSearch
                     ? "opacity-100 scale-100"

@@ -9,7 +9,7 @@ const projects = [
   {
     label: "Website Development",
     title: "Branding",
-    image: "/images/Branding.jpg",
+    image: "/images/branding.jpg",
     subtitle: "Kothari",
   },
 

@@ -1,8 +1,5 @@
-import { CarouselPlugin } from "./components/Carousel";
 import Clients from "./components/Clients";
-import Clients2 from "./components/Clients2";
-import Clients3 from "./components/Clients3";
-import Counter from "./components/Counter";
+
 import FadeIn from "./components/FadeIn";
 import FeaturedContent from "./components/FeaturedContent";
 import Footer from "./components/Footer";

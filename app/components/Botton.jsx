@@ -14,7 +14,7 @@ const Botton = ({ value, size, color }) => {
       onMouseLeave={handleMouseLeave}
       className={`relative md:top-0 overflow-hidden  cursor-pointer ${
         size === "md"
-          ? "text-xl text-center  h-[3.4vh]  w-[20vh]"
+          ? "text-xl text-center  h-[3.4vh] 2xl:h-[2.2vh]  w-[20vh]"
           : size === "lg"
           ? `text-md h-[3vh] w-[15vw]  text-center`
           : ` text-3xl md:text-lg h-[6.5vh] w-[33vh]  rounded-md border border-spacing-1`

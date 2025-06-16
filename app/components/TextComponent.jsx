@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react";
 function TextComponent({ project, color = "111010" }) {
   return (
     <main className="">
-      <div className={`mx-auto max-w-6xl pt-14 px-5 text-[#${color}]`}>
+      <div className={`mx-auto max-w-6xl pt-14 px-5  text-[#${color}]`}>
         <AnimatedText
           el="h2"
           text={[project]}
@@ -78,9 +78,9 @@ export const AnimatedText = ({
         }}
         aria-hidden
       >
-        {textArray.map((line, lineIndex) => (
+        {textArray?.map((line, lineIndex) => (
           <span className="block" key={`${line}-${lineIndex}`}>
-            {line.split(" ").map((word, wordIndex, wordsArray) => (
+            {line?.split(" ").map((word, wordIndex, wordsArray) => (
               <span
                 className={`inline-block ${
                   (wordsArray.length === 2 && wordIndex === 1) ||
@@ -90,7 +90,7 @@ export const AnimatedText = ({
                 }`}
                 key={`${word}-${wordIndex}`}
               >
-                {word.split("").map((char, charIndex) => (
+                {word?.split("").map((char, charIndex) => (
                   <motion.span
                     key={`${char}-${charIndex}`}
                     className="inline-block"

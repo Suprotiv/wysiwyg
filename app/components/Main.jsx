@@ -13,10 +13,10 @@ const playfair = Playfair_Display({
 
 function Main() {
   return (
-    <section className="w-full pb-28 min-h-[80vh] flex flex-col lg:flex-row justify-between items-end bg-gradient-to-br from-[#272626] via-[#0f0e0e] to-[#000000] px-6 md:px-12 lg:px-30 pt-24 lg:pt-0 text-white ">
+    <section className="w-full  min-h-[80vh] flex flex-col lg:flex-row gap-50  justify-center items-center bg-gradient-to-br from-[#111010] via-[#0f0e0e] to-[#000000] px-6 md:px-12 lg:px-30 pt-24 lg:pt-0 text-white ">
       {/* Left section: Headline */}
-      <div className="flex-1 mb-10 lg:mb-16 animate-fadeInSlow">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[85px] font-medium leading-tight text-white">
+      <div className="mt-10 animate-fadeInSlow">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[85px] 2xl:text-9xl font-medium  md:leading-tight text-white">
           We don’t just <br />
           <span className="font-medium">design</span>, we <br />
           <span className={` text-white`}>
@@ -26,8 +26,8 @@ function Main() {
       </div>
 
       {/* Right section: Manifesto Summary & CTA */}
-      <div className="max-w-md space-y-4 pb-10 lg:pb-16 text-left animate-fadeInSlow">
-        <p className="text-gray-300 text-sm md:text-base leading-relaxed">
+      <div className="mt-10 max-w-md space-y-4  text-left animate-fadeInSlow">
+        <p className="text-gray-300 text-sm 2xl:text-lg md:text-base leading-relaxed">
           Symmetry is optional. Vibe is everything. We design with precision—but
           we leave room for the unexpected. Because perfect is boring.
         </p>

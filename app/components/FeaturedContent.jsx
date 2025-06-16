@@ -39,7 +39,7 @@ const FeaturedContent = () => {
         {/* Right: Text */}
         <div className="w-full md:w-1/2 bg-opacity-60 mt-10 p-4 sm:p-6 md:p-8  z-10">
           <FadeIn>
-            <h1 className="text-2xl sm:text-3xl text-[#111010] md:text-4xl font-semibold mb-4 sm:mb-6">
+            <h1 className="text-2xl sm:text-3xl text-[#111010] md:text-4xl  font-semibold mb-4 sm:mb-6">
               <span className={playfair.className}>featured </span> case study
               ITC
             </h1>

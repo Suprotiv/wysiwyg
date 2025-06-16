@@ -1,5 +1,6 @@
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
+import Lenis from "@studio-freight/lenis";
 import {
   motion,
   useTransform,
@@ -17,6 +18,25 @@ const playfair = Playfair_Display({
 });
 
 const HorizontalAwardSection = () => {
+  const lenisRef = useRef(null);
+
+  useEffect(() => {
+    const lenis = new Lenis();
+    lenisRef.current = lenis;
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+    // 🚨 Clean up on component unmount
+    return () => {
+      lenis.destroy();
+      lenisRef.current = null;
+    };
+  }, []);
   return (
     <div className="bg-neutral-900">
       <HorizontalScrollCarousel />
@@ -27,7 +47,7 @@ const HorizontalAwardSection = () => {
 const HorizontalScrollCarousel = () => {
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({ target: targetRef });
-  const x = useTransform(scrollYProgress, [0, 1], ["32%", "-30.5%"]); //1% , 60.5%
+  const x = useTransform(scrollYProgress, [0, 1], ["28%", "-28.5%"]); //1% , 60.5%
 
   return (
     // <section ref={targetRef} className="relative h-[300vh]">
@@ -43,7 +63,7 @@ const HorizontalScrollCarousel = () => {
     //     </motion.div>
     //   </div>
     // </section>
-    <section ref={targetRef} className="relative h-[300vh]">
+    <section ref={targetRef} className="relative h-[250vh]">
       <div className="sticky top-0 flex flex-col h-[100vh] items-center overflow-hidden">
         <div className="flex  p-[10vh] items-center  text-[#fefdf8] font-semibold text-6xl justify-center">
           <p className={playfair.className}>accolades</p>
@@ -88,7 +108,7 @@ const Card = ({ card }) => {
 
   return (
     <div
-      className="group relative h-[450px] w-[450px] md:w-[550px] overflow-hidden shadow-xl bg-neutral-200 cursor-pointer rounded-xs"
+      className="group relative h-[400px] 2xl:h-[600px] w-[450px] md:w-[450px] 2xl:w-[650px] overflow-hidden shadow-xl bg-neutral-200 cursor-pointer rounded-xs"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
@@ -157,9 +177,33 @@ const cards = [
       "his award was presented to Wysiwyg by the Rotary Club for  producing the best newsletter for the year 2012–2013. Wysiwyg’sexacting standards of copy, design and artwork were applied to create a finished product, month-after-month, that reflects the esteem and prestige of the Rotary Club of Calcutta.",
     id: 6,
   },
-  { url: "/images/award5.jpg", title: "Title 5", id: 5 },
-  { url: "/images/award8.jpg", title: "ITC Sonar", id: 3 },
-  { url: "/images/award4.jpg", title: "Title 4", id: 4 },
+  {
+    url: "/images/award5.jpg",
+    title: "The Packaging Professional",
+    description:
+      "The Packaging Professional is a British monthly publication and the magazine of the Packaging Society. Wysiwyg’s Executive Director is quoted in it on Pages 11 and 12 in an article by Eoin Redahan about the nuances of the Indian packaging industry. She expounds on the role of technology and unique design in creating effective packaging.",
+    id: 5,
+  },
+  {
+    url: "/images/award8.jpg",
+    title: "ITC Sonar",
+    description:
+      "This beautiful welcome kit was created for members of the ITC Sonar Spa. It was awarded the Srijan Samman Prize for Folders/Brochures. Immersed in a mellow golden hue, it includes booklets, a brochure and more, designed using gold accents with the frangipani flower as a central thematic element.",
+    id: 3,
+  },
+  {
+    url: "/images/award4.jpg",
+    title: "Festive",
+    description:
+      "Festive is an annual British catalogue of the best promotional mailing by creative agencies around the world. New year greeting mailers from Wysiwyg are featured on page 112 and show off the imagination and creative exuberance of a team of dedicated and fun-loving professionals.",
+    id: 4,
+  },
 
-  { url: "/images/award7.jpg", title: "Rotary Club", id: 7 },
+  {
+    url: "/images/award7.jpg",
+    title: "Kyoorius",
+    description:
+      "Kyoorius is a design magazine that publishes an annual compilation of the best design work in India. Wysiwyg is featured on Page 161 of Volume 1 and showcases work for three of its clients: ITC Gold Flake, IFB Home Appliances and Mahadevi Birla World Academy.",
+    id: 7,
+  },
 ];
