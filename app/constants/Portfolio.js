@@ -148,6 +148,7 @@ instantly recognised.`,
     },
     image_no: 4,
     category: ["education"],
+    tags: ["school", "education", "charity","NGO"],
 
   },
   {
@@ -201,22 +202,5 @@ instantly recognised.`,
     category: ["fmcg"],
     tags: ["fast moving", "consumer goods", "food"],
   },
-  {
-    project_id: "project1",
-    title: "Project 1",
-    projectDescription: "Avama the jewellery brand needed communication that started from the name upwards.",
-    category: ["occasions-&-gifting"],
-  },
-  {
-    project_id: "project2",
-    title: "Project 2",
-    projectDescription: "Avama the jewellery brand needed communication that started from the name upwards.",
-    category: ["catalogue"],
-  },
-  {
-    project_id: "project3",
-    title: "Project 3",
-    projectDescription: "Avama the jewellery brand needed communication that started from the name upwards.",
-    category: ["advertisements"],
-  },
+  
 ];

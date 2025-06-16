@@ -13,10 +13,10 @@ const playfair = Playfair_Display({
 
 function Main() {
   return (
-    <section className="w-full  min-h-[80vh] flex flex-col lg:flex-row gap-50  justify-center items-center bg-gradient-to-br from-[#111010] via-[#0f0e0e] to-[#000000] px-6 md:px-12 lg:px-30 pt-24 lg:pt-0 text-white ">
+    <section className="w-full  min-h-[80vh] flex flex-col lg:flex-row  gap-50  justify-center items-center bg-gradient-to-br from-[#111010] via-[#0f0e0e] to-[#000000] px-6 md:px-12 lg:px-30 pt-24 lg:pt-0 text-white ">
       {/* Left section: Headline */}
       <div className="mt-10 animate-fadeInSlow">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[85px] 2xl:text-9xl font-medium  md:leading-tight text-white">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-[82px] 2xl:text-[120px] font-medium  md:leading-tight text-white">
           We don’t just <br />
           <span className="font-medium">design</span>, we <br />
           <span className={` text-white`}>

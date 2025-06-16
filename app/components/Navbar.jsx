@@ -308,7 +308,11 @@ const Navbar = () => {
                 placeholder="Search..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                onClick={(e) => handleInputSearch(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") {
+                    handleInputSearch(e.target.value);
+                  }
+                }}
                 className={`absolute right-0 top-full mt-2 w-64 px-4 py-2 rounded-md bg-[#fefdf8] text-[#111010] placeholder-[#111010] border border-[#272727] focus:outline-none focus:ring focus:ring-[#444] transition-all duration-300 transform ${
                   showSearch
                     ? "opacity-100 scale-100"
