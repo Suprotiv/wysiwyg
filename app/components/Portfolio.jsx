@@ -110,7 +110,7 @@ const Portfolio = ({ category }) => {
                 onClick={() => router.push(`/projects/${item.project_id}`)}
               >
                 <img
-                  src={`/images/projects/${item.project_id}/MainBG.jpg`}
+                  src={item.images[0]}
                   alt={item.title}
                   className="w-full h-[260px] object-cover transition-transform rounded-sm duration-300 group-hover:scale-105"
                 />

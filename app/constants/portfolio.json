@@ -191,5 +191,62 @@
       ]
     }
   ],
-  "projects": []
+  "projects": [
+    {
+      "project_id": "dinshaws",
+      "title": "Dinshaws",
+      "summaryTitle": "Dinshaws",
+      "projectDescription": "Dinshaw’s Dairy Foods Pvt Ltd was established in 1932. This legacy brand, based out of Nagpur, has steadily expanded its presence across Maharashtra, Madhya Pradesh, Chhattisgarh, West Bengal, Orissa, Andhra Pradesh, Telangana, Karnataka, Goa, Uttar Pradesh, and Jharkhand.",
+      "question": "How does a 93-year-old brand step into the future?",
+      "answer": "By honouring its past, elevating its presence and building on a legacy that’s instantly recognised.",
+      "summary": "Dinshaw’s Dairy Foods Pvt Ltd was established in 1932. This legacy brand, based out of Nagpur, has steadily expanded its presence across Maharashtra, Madhya Pradesh, Chhattisgarh, West Bengal, Orissa, Andhra Pradesh, Telangana, Karnataka, Goa, Uttar Pradesh, and Jharkhand. Revamping a 93-year-old legacy isn’t just about design; it’s about storytelling. It’s about preserving emotional equity while evolving the narrative for a new generation. Dinshaw’s isn’t just an ice cream brand—it’s a cherished memory, woven into celebrations, childhoods, and those everyday moments of indulgence. The brief was straightforward yet ambitious: Identity evolution, but a packaging revolution. The challenge was to retain the authenticity and heritage of Dinshaw’s while making it relevant for the present and future.",
+      "meta": {
+        "services": "DESIGN STRATEGY, BRANDING,PACKAGING DESIGN",
+        "client": "DINSHAW'S DAIRY FOODS PVT LTD",
+        "sector": "FMCG"
+      },
+      "category": [
+        "fmcg"
+      ],
+      "tags": [
+        "food",
+        "fmcg",
+        "ice-cream"
+      ],
+      "images": [
+        "/images/projects/dinshaws/Dinshaw-Bar-ChocoBar.jpg",
+        "/images/projects/dinshaws/Dinshaw-Bar-ChocoNut.jpg",
+        "/images/projects/dinshaws/Dinshaw-Bar-StrawberryKrunch.jpg",
+        "/images/projects/dinshaws/Dinshaw-Cone-ButterScotch copy.jpg",
+        "/images/projects/dinshaws/Dinshaw-Cone-ButterScotch.jpg",
+        "/images/projects/dinshaws/Dinshaw-Cone-ChocoButterScotch.jpg",
+        "/images/projects/dinshaws/Dinshaw-Cone-MississippiDarkChocolate.jpg",
+        "/images/projects/dinshaws/Dinshaw-Cone-MochaBlackWhite.jpg",
+        "/images/projects/dinshaws/Dinshaw-Cone-Pista.jpg",
+        "/images/projects/dinshaws/Dinshaw-Cone-RoastedBadam.jpg",
+        "/images/projects/dinshaws/Dinshaw-Cone-Vanilla.jpg",
+        "/images/projects/dinshaws/Dinshaw-FamilyPack-AmericanNuts.jpg",
+        "/images/projects/dinshaws/Dinshaw-FamilyPack-AnjeerBadam.jpg",
+        "/images/projects/dinshaws/Dinshaw-FamilyPack-BadshahiFaluda.jpg",
+        "/images/projects/dinshaws/Dinshaw-FamilyPack-BlackCurrent.jpg",
+        "/images/projects/dinshaws/Dinshaw-FamilyPack-ButterScotch.jpg",
+        "/images/projects/dinshaws/Dinshaw-FamilyPack-ChocoChips.jpg",
+        "/images/projects/dinshaws/Dinshaw-FamilyPack-FruitOverload.jpg",
+        "/images/projects/dinshaws/Dinshaw-FamilyPack-KesarPista.jpg",
+        "/images/projects/dinshaws/Dinshaw-FamilyPack-Kulfi-3-in-1.jpg",
+        "/images/projects/dinshaws/Dinshaw-FamilyPack-Mango.jpg",
+        "/images/projects/dinshaws/Dinshaw-FamilyPack-MangoLychee.jpg",
+        "/images/projects/dinshaws/Dinshaw-FamilyPack-Pista.jpg",
+        "/images/projects/dinshaws/Dinshaw-FamilyPack-Rajwadi.jpg",
+        "/images/projects/dinshaws/Dinshaw-FamilyPack-RoastedAlmond.jpg",
+        "/images/projects/dinshaws/Dinshaw-FamilyPack-Sitaphal.jpg",
+        "/images/projects/dinshaws/Dinshaw-FamilyPack-Strawberry.jpg",
+        "/images/projects/dinshaws/Dinshaw-Kulfi-Rabdi-Malai.jpg",
+        "/images/projects/dinshaws/Dinshaw-Kulfi-Rajasthani-Peda.jpg",
+        "/images/projects/dinshaws/Dinshaw-Kulfi-Rajbhog.jpg",
+        "/images/projects/dinshaws/Dinshaw-Kulfi-Rajwadi.jpg",
+        "/images/projects/dinshaws/Dinshaw-Kulfi-Sitaphal.jpg"
+      ]
+    }
+  ]
 }
