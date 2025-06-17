@@ -1,4 +1,4 @@
-import { projects } from "../../constants/Portfolio";
+import { projects } from "../../constants/portfolio.json";
 import React from "react";
 import ProjectDetails from "../../components/ProjectDetails";
 export async function generateStaticParams() {

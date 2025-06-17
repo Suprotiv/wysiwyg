@@ -1,10 +1,9 @@
 "use client";
-
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import Lenis from "@studio-freight/lenis";
 import { useEffect } from "react";
-import { projects } from "../constants/Portfolio"; // ✅ Updated import
+import { projects } from "../constants/portfolio.json";
 
 export default function ProjectDetails({ category, project_id }) {
   const { scrollYProgress } = useScroll();
@@ -39,7 +38,7 @@ export default function ProjectDetails({ category, project_id }) {
         className=""
         style={{
           y: backgroundY,
-          backgroundImage: `url(/images/${project_id}/MainBG.jpg)`,
+          backgroundImage: `url(/images/projects/${project_id}/MainBG.jpg)`,
           backgroundSize: "cover",
 
           backgroundPosition: "center",
@@ -130,10 +129,10 @@ export default function ProjectDetails({ category, project_id }) {
 
         {/* Collage */}
         <div className="col-span-1 grid grid-cols-2 md:grid-cols-3 gap-4 p-8 md:p-20">
-          {Array.from({ length: image_no }).map((_, index) => (
+          {project.images?.map((imgSrc, index) => (
             <img
               key={index}
-              src={`/images/${project_id}/image${index + 1}.jpg`}
+              src={imgSrc}
               alt={`Project image ${index + 1}`}
               className="w-full h-full object-cover rounded-sm"
             />

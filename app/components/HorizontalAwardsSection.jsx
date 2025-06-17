@@ -108,7 +108,7 @@ const Card = ({ card }) => {
 
   return (
     <div
-      className="group relative h-[400px] 2xl:h-[600px] w-[450px] md:w-[450px] 2xl:w-[650px] overflow-hidden shadow-xl bg-neutral-200 cursor-pointer rounded-xs"
+      className="group relative h-[330px] md:h-[400px] 2xl:h-[600px] w-[350px] md:w-[450px] 2xl:w-[650px] overflow-hidden shadow-xl bg-neutral-200 cursor-pointer rounded-xs"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >

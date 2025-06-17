@@ -64,10 +64,10 @@ const Clients = ({ direction = "left" }) => {
         <div className="w-full h-px bg-gray-500 opacity-40" />
 
         {/* Content Section */}
-        <div className="py-8 px-4 md:px-20 flex flex-col md:flex-row justify-between items-center gap-10">
+        <div className="py-8 px-4 md:px-20 md:flex justify-between items-center gap-10">
           {/* Left Text */}
-          <div className="text-white max-w-md flex-shrink-0 z-20">
-            <h2 className="text-lg text-gray-200 font-medium mb-2">
+          <div className="text-white max-w-md flex-shrink-0 z-20 mb-12 md:mb-2">
+            <h2 className="text-md md:text-lg text-gray-200 font-medium mb-2">
               At Wysiwyg, we design with heart, mind, and a bit of madness.
               Because when you’re creating something unforgettable, playing it
               safe isn’t part of the script.
@@ -80,7 +80,7 @@ const Clients = ({ direction = "left" }) => {
           {/* Scrolling Clients */}
           <div className="relative h-[12vh] overflow-x-hidden flex-1 w-full max-w-full">
             <motion.div
-              className="absolute left-0 flex gap-10 items-center"
+              className="absolute left-0 flex gap-8 md:gap-10 items-center"
               style={{ x: xTranslation }}
               ref={ref}
               onHoverStart={() => {

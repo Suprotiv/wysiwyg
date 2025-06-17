@@ -1,7 +1,9 @@
-import { projects, categories } from "../../constants/Portfolio";
+import portfolioData from "../../constants/portfolio.json";
 import Portfolio from "../../components/Portfolio";
 import TextComponent from "../../components/TextComponent";
 import React from "react";
+
+const { categories } = portfolioData;
 
 // Generate static paths for each category
 export async function generateStaticParams() {

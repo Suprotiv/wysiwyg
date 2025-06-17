@@ -17,7 +17,7 @@ const Botton = ({ value, size, color }) => {
           ? "text-xl text-center  h-[3.4vh] 2xl:h-[2.2vh]  w-[20vh]"
           : size === "lg"
           ? `text-md h-[3vh] w-[15vw]  text-center`
-          : ` text-3xl md:text-lg h-[6.5vh] w-[33vh]  rounded-md border border-spacing-1`
+          : `text-lg h-[6.5vh] w-[33vh]  rounded-md border border-spacing-1`
       } font-bold inline-block`} // Adjust to fit the text size
     >
       {/* Original Text */}

@@ -2,7 +2,9 @@
 
 import React, { useRef, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { projects } from "../constants/Portfolio";
+import portfolioData from "../constants/portfolio.json";
+
+const { projects } = portfolioData;
 import {
   useScroll,
   useTransform,
@@ -108,7 +110,7 @@ const Portfolio = ({ category }) => {
                 onClick={() => router.push(`/projects/${item.project_id}`)}
               >
                 <img
-                  src={`/images/${item.project_id}/MainBG.jpg`}
+                  src={`/images/projects/${item.project_id}/MainBG.jpg`}
                   alt={item.title}
                   className="w-full h-[260px] object-cover transition-transform rounded-sm duration-300 group-hover:scale-105"
                 />
