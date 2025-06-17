@@ -97,6 +97,7 @@ const Portfolio = ({ category }) => {
           {filteredProjects.map((item, index) => (
             <FadeIn
               key={index}
+              view="-100px"
               duration={0.4 + (index % 3) * 0.1}
               yvalue={20 + (index % 3) * 12}
             >

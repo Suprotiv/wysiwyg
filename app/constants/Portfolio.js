@@ -152,6 +152,117 @@ instantly recognised.`,
 
   },
   {
+    project_id: "grit",
+    title: "GRIT",
+    projectDescription:
+      "Avama the jewellery school brand needed communication that started from the name upwards.",
+    question: "How does a 93-year-old brand step into the future?",
+    answer: `By honouring its past,
+elevating its presence and
+building on a legacy that’s
+instantly recognised.`,
+    summaryTitle: "MVK",
+    summary: `Dinshaw’s Dairy Foods Pvt Ltd was established in 1932...`,
+    meta: {
+      services: "DESIGN STRATEGY | BRANDING | DIGITAL DESIGN",
+      client: "MVK",
+      sector: "EDUCATION",
+    },
+    image_no: 2,
+    category: ["education"],
+    tags: ["school", "education", "charity","NGO"],
+
+  },
+  {
+    project_id: "earth-day-network",
+    title: "Earth day work",
+    projectDescription:
+      "Avama the jewellery school brand needed communication that started from the name upwards.",
+    question: "How does a 93-year-old brand step into the future?",
+    answer: `By honouring its past,
+elevating its presence and
+building on a legacy that’s
+instantly recognised.`,
+    summaryTitle: "MVK",
+    summary: `Dinshaw’s Dairy Foods Pvt Ltd was established in 1932...`,
+    meta: {
+      services: "DESIGN STRATEGY | BRANDING | DIGITAL DESIGN",
+      client: "MVK",
+      sector: "EDUCATION",
+    },
+    image_no: 6,
+    category: ["education"],
+    tags: ["school", "education", "charity","NGO"],
+
+  },
+  {
+    project_id: "ifb-agro",
+    title: "IFB Agro",
+    projectDescription:
+      "Avama the jewellery school brand needed communication that started from the name upwards.",
+    question: "How does a 93-year-old brand step into the future?",
+    answer: `By honouring its past,
+elevating its presence and
+building on a legacy that’s
+instantly recognised.`,
+    summaryTitle: "MVK",
+    summary: `Dinshaw’s Dairy Foods Pvt Ltd was established in 1932...`,
+    meta: {
+      services: "DESIGN STRATEGY | BRANDING | DIGITAL DESIGN",
+      client: "MVK",
+      sector: "EDUCATION",
+    },
+    image_no: 2,
+    category: ["education"],
+    tags: ["school", "education", "charity","NGO"],
+
+  },
+  {
+    project_id: "itc",
+    title: "ITC",
+    projectDescription:
+      "Avama the jewellery school brand needed communication that started from the name upwards.",
+    question: "How does a 93-year-old brand step into the future?",
+    answer: `By honouring its past,
+elevating its presence and
+building on a legacy that’s
+instantly recognised.`,
+    summaryTitle: "MVK",
+    summary: `Dinshaw’s Dairy Foods Pvt Ltd was established in 1932...`,
+    meta: {
+      services: "DESIGN STRATEGY | BRANDING | DIGITAL DESIGN",
+      client: "MVK",
+      sector: "EDUCATION",
+    },
+    image_no: 2,
+    category: ["education"],
+    tags: ["school", "education", "charity","NGO"],
+
+  },
+  {
+    project_id: "itc-hotel",
+    title: "ITC Hotel",
+    projectDescription:
+      "Avama the jewellery school brand needed communication that started from the name upwards.",
+    question: "How does a 93-year-old brand step into the future?",
+    answer: `By honouring its past,
+elevating its presence and
+building on a legacy that’s
+instantly recognised.`,
+    summaryTitle: "MVK",
+    summary: `Dinshaw’s Dairy Foods Pvt Ltd was established in 1932...`,
+    meta: {
+      services: "DESIGN STRATEGY | BRANDING | DIGITAL DESIGN",
+      client: "MVK",
+      sector: "EDUCATION",
+    },
+    image_no: 2,
+    category: ["education"],
+    tags: ["school", "education", "charity","NGO"],
+
+  },
+  
+  {
     project_id: "dinshaws",
     title: "Dinshaws",
     projectDescription:
