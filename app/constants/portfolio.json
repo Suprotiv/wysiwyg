@@ -247,6 +247,50 @@
         "/images/projects/dinshaws/Dinshaw-Kulfi-Rajwadi.jpg",
         "/images/projects/dinshaws/Dinshaw-Kulfi-Sitaphal.jpg"
       ]
+    },
+    {
+      "project_id": "idlygo",
+      "title": "Idlygo",
+      "summaryTitle": "",
+      "projectDescription": "",
+      "question": "",
+      "answer": "",
+      "summary": "",
+      "meta": {
+        "services": "",
+        "client": "",
+        "sector": ""
+      },
+      "category": [],
+      "tags": [],
+      "images": [
+        "/images/projects/idlygo/IdlyGo-Aloo-Bonda-Dangler-March-2025-01.jpg",
+        "/images/projects/idlygo/IdlyGo-Aloo-Bonda-Dangler-March-2025-02.jpg",
+        "/images/projects/idlygo/IdlyGo-Aloo-Bonda-Poster-01-Feb-2025.jpg",
+        "/images/projects/idlygo/IdlyGo-Aloo-Bonda-Poster-02-Feb-2025.jpg",
+        "/images/projects/idlygo/IdlyGo-Aloo-Bonda-Poster-March-2025-01.jpg",
+        "/images/projects/idlygo/IdlyGo-Aloo-Bonda-Poster-March-2025-02.jpg",
+        "/images/projects/idlygo/IdlyGo-Aloo-Bonda-Poster-March-2025-03.jpg",
+        "/images/projects/idlygo/IdlyGo-Combined-Ad-April-2025.jpg",
+        "/images/projects/idlygo/IdlyGo-IPL-01-March-2025.jpg",
+        "/images/projects/idlygo/IdlyGo-IPL-02-March-2025-01.jpg",
+        "/images/projects/idlygo/IdlyGo-IPL-02-March-2025-02.jpg",
+        "/images/projects/idlygo/IdlyGo-Kasba-GSB-01-Feb-2025.jpg",
+        "/images/projects/idlygo/IdlyGo-Kasba-GSB-02-Feb-2025.jpg",
+        "/images/projects/idlygo/IdlyGo-Kasba-GSB-Sample-Feb-2025.jpg",
+        "/images/projects/idlygo/IdlyGo-Madurai-Ad-April-2025.jpg",
+        "/images/projects/idlygo/IdlyGo-Newspaper-Ad-Caltimes-Feb-2025.jpg",
+        "/images/projects/idlygo/IdlyGo-Ragi-Ad-April-2025.jpg",
+        "/images/projects/idlygo/IdlyGo-Ragi-Millet-Batter-Ragi-Leaflet-Feb-2025.jpg",
+        "/images/projects/idlygo/IdlyGo-Translite1-April-2025.jpg",
+        "/images/projects/idlygo/IdlyGo-Translite2-April-2025.jpg",
+        "/images/projects/idlygo/IdlyGo-Ultadanga-store-April-2025.jpg",
+        "/images/projects/idlygo/Idlygo-Loyalty-Points-Dangler-Jan-2025.jpg",
+        "/images/projects/idlygo/Idlygo-Mysore-Masala-Dosa-Leaflet-Jan-2025.jpg",
+        "/images/projects/idlygo/Idlygo-Party-Buffet-Dangler-Jan-2025.jpg",
+       
+        "/images/projects/idlygo/MainBG.jpg"
+      ]
     }
   ]
 }

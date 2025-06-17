@@ -38,7 +38,7 @@ export default function ProjectDetails({ category, project_id }) {
         className=""
         style={{
           y: backgroundY,
-          backgroundImage: `url(${project.images[0]})`,
+          backgroundImage: `url(/images/projects/${project_id}/MainBG.jpg)`,
           backgroundSize: "cover",
 
           backgroundPosition: "center",
