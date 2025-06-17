@@ -49,21 +49,21 @@ export default function ScrollScaleImage() {
             <div className="flex flex-col gap-10 w-full items-center  rounded-3xl p-4 md:p-10 md:flex-row">
               <div className=" py-10 w-7/8  text-xl md:text-[36px] 2xl:text-5xl font-semibold text-[#fefdf8]">
                 <FadeIn view="-400px">
-                  <p className="  text-left    my-18 2xl:my-30">
+                  <p className="  text-left my-12  md:ml-28 md:my-16 2xl:m-30">
                     Design isn’t mainstream. It’s got character. It grabs
                     attention, spins it around, and leaves a mark. If you want
                     quiet, you’re in the wrong place.
                   </p>
                 </FadeIn>
                 <FadeIn view="-400px">
-                  <p className="  text-left   my-18 2xl:my-30">
+                  <p className="  text-left  my-12 md:ml-28 md:my-16 2xl:m-30">
                     Colours aren’t curated—they explode. Palettes are for
                     painters; we mix shades with attitude. Bold? Always. Basic?
                     Never.
                   </p>
                 </FadeIn>
                 <FadeIn view="-400px">
-                  <p className="  text-left   my-18 2xl:my-30">
+                  <p className="  text-left my-12 md:ml-28 md:my-16 2xl:m-30">
                     At Wysiwyg, we don’t just design—we disrupt. Creativity
                     isn’t a box to fit into; it’s a wall to break through. We
                     chase the spark, ride the chaos and craft designs that don’t

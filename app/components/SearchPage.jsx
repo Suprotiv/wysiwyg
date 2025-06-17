@@ -2,7 +2,7 @@
 import { useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useState, useRef } from "react";
 import Fuse from "fuse.js";
-import { projects, categories } from "../constants/Portfolio"; // replace with actual import path
+import { projects, categories } from "../constants/portfolio.json"; // replace with actual import path
 import Image from "next/image";
 import Link from "next/link";
 import FadeIn from "./FadeIn";
@@ -87,7 +87,7 @@ export default function SearchPage() {
                 >
                   <div className="w-full h-48 relative">
                     <Image
-                      src={`/images/${project.project_id}/MainBG.jpg`}
+                      src={`/images/projects/${project.project_id}/MainBG.jpg`}
                       alt={project.title}
                       layout="fill"
                       objectFit="cover"
@@ -100,7 +100,7 @@ export default function SearchPage() {
                     <p className="text-gray-300 text-sm">
                       {project.projectDescription}
                     </p>
-                    {project.tags && (
+                    {/* {project.tags && (
                       <div className="mt-3 flex flex-wrap gap-2">
                         {project.tags.map((tag, i) => (
                           <span
@@ -111,7 +111,7 @@ export default function SearchPage() {
                           </span>
                         ))}
                       </div>
-                    )}
+                    )} */}
                   </div>
                 </Link>
               ))}

@@ -194,7 +194,7 @@
   "projects": [
     {
       "project_id": "dinshaws",
-      "title": "Dinshaws",
+      "title": "Dinshaw's",
       "summaryTitle": "Dinshaws",
       "projectDescription": "Dinshaw’s Dairy Foods Pvt Ltd was established in 1932. This legacy brand, based out of Nagpur, has steadily expanded its presence across Maharashtra, Madhya Pradesh, Chhattisgarh, West Bengal, Orissa, Andhra Pradesh, Telangana, Karnataka, Goa, Uttar Pradesh, and Jharkhand.",
       "question": "How does a 93-year-old brand step into the future?",
@@ -245,24 +245,31 @@
         "/images/projects/dinshaws/Dinshaw-Kulfi-Rajasthani-Peda.jpg",
         "/images/projects/dinshaws/Dinshaw-Kulfi-Rajbhog.jpg",
         "/images/projects/dinshaws/Dinshaw-Kulfi-Rajwadi.jpg",
-        "/images/projects/dinshaws/Dinshaw-Kulfi-Sitaphal.jpg"
+        "/images/projects/dinshaws/Dinshaw-Kulfi-Sitaphal.jpg",
+        "/images/projects/dinshaws/MainBG.jpg"
       ]
     },
     {
       "project_id": "idlygo",
-      "title": "Idlygo",
-      "summaryTitle": "",
-      "projectDescription": "",
+      "title": "IdlyGo",
+      "summaryTitle": "IdlyGo",
+      "projectDescription": "IdlyGo transforms the concept of meals on wheels with a healthy affordable offering of idlis.",
       "question": "",
       "answer": "",
-      "summary": "",
+      "summary": "IdlyGo transforms the concept of meals on wheels with a healthy affordable offering of idlis. We designed the logo and collaterals in a way that was bound to attract attention on the street.",
       "meta": {
-        "services": "",
-        "client": "",
-        "sector": ""
+        "services": "Logo, Packaging",
+        "client": "IdlyGo",
+        "sector": "FMCG"
       },
-      "category": [],
-      "tags": [],
+      "category": [
+        "fmcg"
+      ],
+      "tags": [
+        "fmcg",
+        "food",
+        "package"
+      ],
       "images": [
         "/images/projects/idlygo/IdlyGo-Aloo-Bonda-Dangler-March-2025-01.jpg",
         "/images/projects/idlygo/IdlyGo-Aloo-Bonda-Dangler-March-2025-02.jpg",
@@ -280,6 +287,7 @@
         "/images/projects/idlygo/IdlyGo-Kasba-GSB-Sample-Feb-2025.jpg",
         "/images/projects/idlygo/IdlyGo-Madurai-Ad-April-2025.jpg",
         "/images/projects/idlygo/IdlyGo-Newspaper-Ad-Caltimes-Feb-2025.jpg",
+        "/images/projects/idlygo/IdlyGo-Posters-Jan-2025.gif",
         "/images/projects/idlygo/IdlyGo-Ragi-Ad-April-2025.jpg",
         "/images/projects/idlygo/IdlyGo-Ragi-Millet-Batter-Ragi-Leaflet-Feb-2025.jpg",
         "/images/projects/idlygo/IdlyGo-Translite1-April-2025.jpg",
@@ -288,8 +296,217 @@
         "/images/projects/idlygo/Idlygo-Loyalty-Points-Dangler-Jan-2025.jpg",
         "/images/projects/idlygo/Idlygo-Mysore-Masala-Dosa-Leaflet-Jan-2025.jpg",
         "/images/projects/idlygo/Idlygo-Party-Buffet-Dangler-Jan-2025.jpg",
-       
+        "/images/projects/idlygo/Idlygo-Ragi-Leaflet-Jan-2025.jpg",
+        "/images/projects/idlygo/Idlygo-Ragi-Millet-Batter-Danglers-Jan-2025.gif",
         "/images/projects/idlygo/MainBG.jpg"
+      ]
+    },
+    {
+      "project_id": "kothari",
+      "title": "Kothari",
+      "summaryTitle": "Kothari",
+      "projectDescription": "Kothari is a century old brand which manufactures thermal wear.",
+      "question": "",
+      "answer": "",
+      "summary": "Kothari is a century old brand which manufactures thermal wear. Our logo for the brand highlighted its 100 year old family tradition while the packaging embraces different approaches to warmth from the emotional to the stylish.",
+      "meta": {
+        "services": "Logo, Packaging",
+        "client": "Kothari",
+        "sector": "Lifestyle"
+      },
+      "category": [
+        "lifestyle"
+      ],
+      "tags": [
+        "lifestyle",
+        "kothari",
+        "bag"
+      ],
+      "images": [
+        "/images/projects/kothari/Kothari-Carry-Bag-03-April-2025.jpg",
+        "/images/projects/kothari/Kothari-Carry-Bag-04-April-2025.jpg",
+        "/images/projects/kothari/Kothari-Carry-Bag-05-April-2025.jpg",
+        "/images/projects/kothari/Kothari-Freedom-Kiosk-01-April-2025.jpg",
+        "/images/projects/kothari/Kothari-Freedom-Kiosk-02-April-2025.jpg",
+        "/images/projects/kothari/Kothari-Freedom-Kiosk-03-April-2025.jpg",
+        "/images/projects/kothari/Kothari-Freedom-Kiosk-04-April-2025.jpg",
+        "/images/projects/kothari/MainBG.jpg"
+      ]
+    },
+    {
+      "project_id": "ambuja",
+      "title": "Ambuja Neotia",
+      "summaryTitle": "Ambuja Neotia",
+      "projectDescription": "The launch of Utalika Panchami, seen through its various collaterals.",
+      "question": "",
+      "answer": "",
+      "summary": "The launch of Utalika Panchami, seen through its various collaterals.",
+      "meta": {
+        "services": "Ad Newspaper, Hoarding, Leaflet, Brochure & Social Media",
+        "client": "Ambuja Neotia",
+        "sector": "Real Estate"
+      },
+      "category": [
+        "real-estate"
+      ],
+      "tags": [
+        "real estate",
+        "ad newspaper",
+        "hoarding",
+        "leaflet",
+        "brochure",
+        "social media"
+      ],
+      "images": [
+        "/images/projects/ambuja/Ambuja-Nova-Brochure-01-April-2025.jpg",
+        "/images/projects/ambuja/Ambuja-Nova-Brochure-03-April-2025.jpg",
+        "/images/projects/ambuja/Ambuja-Nova-Brochure-04-April-2025.jpg",
+        "/images/projects/ambuja/Ambuja-Nova-Brochure-05-April-2025.jpg",
+        "/images/projects/ambuja/Ambuja-Nova-Brochure-06-April-2025.jpg",
+        "/images/projects/ambuja/Ambuja-Utpalaa-Brochure-01-April-2025.jpg",
+        "/images/projects/ambuja/Ambuja-Utpalaa-Brochure-02-April-2025.jpg",
+        "/images/projects/ambuja/Ambuja-Utpalaa-Brochure-03-April-2025.jpg",
+        "/images/projects/ambuja/Ambuja-Utpalaa-Brochure-04-April-2025.jpg",
+        "/images/projects/ambuja/Ambuja-Utpalaa-Brochure-05-April-2025.jpg",
+        "/images/projects/ambuja/Ambuja-Utpalaa-Brochure-06-April-2025.jpg",
+        "/images/projects/ambuja/Ambuja-Utpalaa-Brochure-07-April-2025.jpg",
+        "/images/projects/ambuja/Ambuja-Utpalaa-Brochure-08-April-2025.jpg",
+        "/images/projects/ambuja/Ambuja-Utpalaa-Brochure-09-April-2025.jpg",
+        "/images/projects/ambuja/Ambuja-Utpalaa-Brochure-10-April-2025.jpg",
+        "/images/projects/ambuja/Ambuja-Utpalaa-Brochure-11-April-2025.jpg",
+        "/images/projects/ambuja/Ambuja-Utpalaa-Brochure-12-April-2025.jpg",
+        "/images/projects/ambuja/Ambuja-Utpalaa-Brochure-13-April-2025.jpg",
+        "/images/projects/ambuja/MainBG.jpg"
+      ]
+    },
+    {
+      "project_id": "earthdaynetwork",
+      "title": "Earth Day Network",
+      "summaryTitle": "Earth Day Network",
+      "projectDescription": "EDN is the organisation that founded Earth Day in 1970.",
+      "question": "",
+      "answer": "",
+      "summary": "EDN is the organisation that founded Earth Day in 1970. As its key global communications partner, our eco-sensitive designs help mobilise its efforts in India and beyond.",
+      "meta": {
+        "services": "Logos, Certificates, Posters, Social Media, Stationery, Brochures, Merchandise, eBooks, Invitations, Presentations",
+        "client": "Earth Day Network",
+        "sector": "CSR"
+      },
+      "category": [
+        "csr"
+      ],
+      "tags": [
+        "logos",
+        "certificates",
+        "posters",
+        "social media",
+        "stationery",
+        "brochures",
+        "merchandise",
+        "eBooks",
+        "invitations",
+        "presentations"
+      ],
+      "images": [
+        "/images/projects/earthdaynetwork/EDN-Climate-Education-PPT-April-2025.jpg",
+        "/images/projects/earthdaynetwork/EDN-Morning-Assembly-Certificate-March-2025.jpg",
+        "/images/projects/earthdaynetwork/EDN-Spice-Bageecha-Invite-Jan-2025.jpg",
+        "/images/projects/earthdaynetwork/MainBG.jpg"
+      ]
+    },
+    {
+      "project_id": "itchotels",
+      "title": "ITC Hotels",
+      "summaryTitle": "ITC Hotels",
+      "projectDescription": "Our design architecture for ITC Sonar and ITC Royal Bengal enhanced the concept of heritage with soul, celebrating a glorious past and a brilliant future.",
+      "question": "",
+      "answer": "",
+      "summary": "The task for ITC Hotels was to match the elegance of its epicurean offerings with stylish designs. Our design architecture for ITC Sonar and ITC Royal Bengal enhanced the concept of heritage with soul, celebrating a glorious past and a brilliant future.",
+      "meta": {
+        "services": "Brochures, Leaflets, Posters, Tent Cards, Surface Graphics, Stationery, Gifting",
+        "client": "ITC Hotels",
+        "sector": "Luxury"
+      },
+      "category": [
+        "luxury"
+      ],
+      "tags": [
+        "Brochures",
+        "Leaflets",
+        "Posters",
+        "Tent Cards",
+        "Surface Graphics",
+        "Stationery",
+        "Gifting"
+      ],
+      "images": [
+        "/images/projects/itchotels/ITC-Sonar-Compliments-Card-Jan-2025.gif",
+        "/images/projects/itchotels/ITC-Sonar-Eden-Pavilion-Posters-Jan-2025.gif",
+        "/images/projects/itchotels/ITC-Sonar-GuestBook-Jan-2025.gif",
+        "/images/projects/itchotels/ITC-Sonar-MyGate-Jan-2025.jpg",
+        "/images/projects/itchotels/ITC-Sonar-SunBoard-Poster-Jan-2025.jpg",
+        "/images/projects/itchotels/MainBG.jpg"
+      ]
+    },
+    {
+      "project_id": "the-newtown-school",
+      "title": "The Newtown School",
+      "summaryTitle": "The Newtown School, Kolkata",
+      "projectDescription": "The Newtown School needed brand communication that matched their futuristic approach.",
+      "question": "",
+      "answer": "",
+      "summary": "The Newtown School needed brand communication that matched their futuristic approach. The identity we created was accessible, contemporary and appealing to both parents and their children.",
+      "meta": {
+        "services": "Logo, Brochure, Stationery, Corporate Diary, Calendar, Forms, Uniforms, Carry Bag, Certificates, Medals, Event, Press Ads, Event Branding, Hoardings, Social Media, Invitation, Cards, Digital Invites",
+        "client": "The Newtown School, Kolkata",
+        "sector": "Education"
+      },
+      "category": [
+        "education"
+      ],
+      "tags": [
+        "logo",
+        "brochure",
+        "stationery",
+        "corporate diary",
+        "calendar",
+        "forms",
+        "uniforms",
+        "carry bag",
+        "Certificates",
+        "medals",
+        "Event",
+        "Press Ads",
+        "Event Branding",
+        "Hoardings",
+        "Social Media",
+        "Invitation",
+        "Cards",
+        "Digital Invites"
+      ],
+      "images": [
+        "/images/projects/the-newtown-school/MainBG.jpg",
+        "/images/projects/the-newtown-school/NTS-10th-Year-Poem-Carousel-April-2025.jpg",
+        "/images/projects/the-newtown-school/NTS-Annual-Day-Invite-Feb-2025.jpg",
+        "/images/projects/the-newtown-school/NTS-Annual-Sports-Day-Certificates-Jan-2025.gif",
+        "/images/projects/the-newtown-school/NTS-Chest-Numbers-Jan-2025.jpg",
+        "/images/projects/the-newtown-school/NTS-Disneyverse-Coupons-Jan-2025.gif",
+        "/images/projects/the-newtown-school/NTS-Disneyverse-T2-Newspaper-Feb-2025.jpg",
+        "/images/projects/the-newtown-school/NTS-Disneyverse-VolunteerIDCard-Feb-2025.jpg",
+        "/images/projects/the-newtown-school/NTS-Disneyverse-Wristbands-02-Jan-2025.jpg",
+        "/images/projects/the-newtown-school/NTS-Disneyverse-Wristbands-Jan-2025.jpg",
+        "/images/projects/the-newtown-school/NTS-Gate-Jan-2025.jpg",
+        "/images/projects/the-newtown-school/NTS-Indigo-Full-Page-Ad-Feb-2025.jpg",
+        "/images/projects/the-newtown-school/NTS-Leaflet-Jan-2025.gif",
+        "/images/projects/the-newtown-school/NTS-Medals-Jan-2025.gif",
+        "/images/projects/the-newtown-school/NTS-Principal-Meet-Jan-2025.jpg",
+        "/images/projects/the-newtown-school/NTS-Red-Yellow-Green-Cards-Feb-2025.jpg",
+        "/images/projects/the-newtown-school/NTS-Reel-Cover-April-2025.jpg",
+        "/images/projects/the-newtown-school/NTS-Republic-Day-Newspaper-Ad-Jan-2025.jpg",
+        "/images/projects/the-newtown-school/NTS-Republic-Day-Selfie-Backdrop-Jan-2025.jpg",
+        "/images/projects/the-newtown-school/NTS-Republic-Day-Standy-Jan-2025.jpg",
+        "/images/projects/the-newtown-school/NTS-Saraswati-Puja-Jan-2025.jpg",
+        "/images/projects/the-newtown-school/NTS-Student-Council-Members-April-2025.jpg"
       ]
     }
   ]

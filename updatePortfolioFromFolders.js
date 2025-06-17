@@ -49,7 +49,7 @@ function handleNewOrUpdatedProject(folderName) {
   // Read all image files
   const files = fs.readdirSync(folderPath);
   const imageFiles = files.filter(file =>
-    /\.(jpg|jpeg|png|webp)$/i.test(file)
+    /\.(jpg|jpeg|png|webp|gif|mp4|mov)$/i.test(file)
   );
   const images = imageFiles.map(
     file => `/images/projects/${folderName}/${file}`

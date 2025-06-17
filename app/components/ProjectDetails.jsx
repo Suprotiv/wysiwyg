@@ -113,7 +113,7 @@ export default function ProjectDetails({ category, project_id }) {
               </p>
             ))}
 
-            <div className="mt-6 space-y-1 font-semibold text-sm">
+            <div className="mt-6 space-y-1 text-base">
               <p>
                 <span className="font-bold">SERVICES</span> {meta?.services}
               </p>
